@@ -1,0 +1,37 @@
+?SNDlib native format; type: network; version: 1.0
+
+# Official SNDlib native-format example, lightly reformatted for readability.
+# Source: https://sndlib.put.poznan.pl/html/docu/io-formats/native/examples/network.txt
+# Unit 1 corresponds to 2 Mbit/s. The implementation ignores hop limits,
+# admissible-path restrictions and fixed-charge costs, matching the paper's
+# core experimental setup. Preinstalled capacity is treated as sunk capacity.
+
+NODES (
+  A ( 11.49 49.26 )
+  B ( 11.80 48.65 )
+  C ( 12.25 49.10 )
+  D ( 12.40 49.90 )
+  E ( 11.43 49.90 )
+)
+
+LINKS (
+  # link_id (source target) preinstalled_capacity preinstalled_cost routing_cost fixed_charge_cost (capacity cost ...)
+  L_AB ( A B ) 63 100 10 1000 ( 63 1000 252 1200 )
+  L_AC ( A C ) 0 0 10 1000 ( 63 1300 252 1800 )
+  L_AD ( A D ) 0 0 10 1000 ( 63 2000 252 3000 )
+  L_BC ( B C ) 0 0 10 1000 ( 63 1200 252 1900 )
+  L_BD ( B D ) 0 0 10 1000 ( 63 1000 252 2000 )
+  L_DC ( D C ) 0 0 10 1000 ( 63 1000 252 2000 )
+  L_DE ( D E ) 0 0 10 1000 ( 63 1000 252 2000 )
+  L_EC ( E C ) 0 0 10 1000 ( 63 1000 252 2000 )
+)
+
+DEMANDS (
+  # demand_id (source target) routing_unit quantity hop_limit ()
+  D_AC ( A C ) 1 50 UNLIMITED ()
+  D_EC ( E C ) 1 27 UNLIMITED ()
+  D_AB ( A B ) 63 2 2 ()
+)
+
+# Admissible paths are omitted: this project allows all paths, as in the paper's
+# computational setup. SNDlib native files may include an ADMISSIBLE_PATHS section.

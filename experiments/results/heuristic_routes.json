@@ -1,0 +1,108 @@
+{
+  "network_scale_1": {
+    "objective": 5330.0,
+    "routing_cost": 2030.0,
+    "module_cost": 3300.0,
+    "feasible": true,
+    "routes": {
+      "D_AB": [
+        "A",
+        "B"
+      ],
+      "D_AC": [
+        "A",
+        "C"
+      ],
+      "D_EC": [
+        "E",
+        "C"
+      ]
+    },
+    "edge_loads": {
+      "L_AB": 126.0,
+      "L_AC": 50.0,
+      "L_AD": 0.0,
+      "L_BC": 0.0,
+      "L_BD": 0.0,
+      "L_DC": 0.0,
+      "L_DE": 0.0,
+      "L_EC": 27.0
+    },
+    "module_counts": {
+      "L_AB::module_0": 1,
+      "L_AC::module_0": 1,
+      "L_EC::module_0": 1
+    }
+  },
+  "network_scale_2": {
+    "objective": 8060.0,
+    "routing_cost": 4060.0,
+    "module_cost": 4000.0,
+    "feasible": true,
+    "routes": {
+      "D_AB": [
+        "A",
+        "B"
+      ],
+      "D_AC": [
+        "A",
+        "C"
+      ],
+      "D_EC": [
+        "E",
+        "C"
+      ]
+    },
+    "edge_loads": {
+      "L_AB": 252.0,
+      "L_AC": 100.0,
+      "L_AD": 0.0,
+      "L_BC": 0.0,
+      "L_BD": 0.0,
+      "L_DC": 0.0,
+      "L_DE": 0.0,
+      "L_EC": 54.0
+    },
+    "module_counts": {
+      "L_AB::module_1": 1,
+      "L_AC::module_1": 1,
+      "L_EC::module_0": 1
+    }
+  },
+  "network_scale_3": {
+    "objective": 12090.0,
+    "routing_cost": 6090.0,
+    "module_cost": 6000.0,
+    "feasible": true,
+    "routes": {
+      "D_AB": [
+        "A",
+        "B"
+      ],
+      "D_AC": [
+        "A",
+        "C"
+      ],
+      "D_EC": [
+        "E",
+        "C"
+      ]
+    },
+    "edge_loads": {
+      "L_AB": 378.0,
+      "L_AC": 150.0,
+      "L_AD": 0.0,
+      "L_BC": 0.0,
+      "L_BD": 0.0,
+      "L_DC": 0.0,
+      "L_DE": 0.0,
+      "L_EC": 81.0
+    },
+    "module_counts": {
+      "L_AB::module_0": 1,
+      "L_AB::module_1": 1,
+      "L_AC::module_1": 1,
+      "L_EC::module_0": 2
+    }
+  }
+}

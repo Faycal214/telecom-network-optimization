@@ -1,0 +1,10 @@
+instance,demand_scale,method,capacity_mode,status,objective,runtime_sec,lower_bound,upper_bound,mip_gap_pct,cuts_added,feasible,message
+network.txt,1.0,Base MILP,modular,optimal,5330.0,0.054596,5330.0,5330.0,0.0,0,True,solver_status=ok
+network.txt,1.0,MILP + MIR cutset inequalities,modular,optimal,5330.0,0.044368,5330.0,5330.0,0.0,28,True,solver_status=ok
+network.txt,1.0,Greedy single-path heuristic,modular,feasible,5330.0,0.003567,,,,0,True,gap_vs_proven_optimum_pct=0.0
+network.txt,2.0,Base MILP,modular,optimal,8060.0,0.037802,8060.0,8060.0,0.0,0,True,solver_status=ok
+network.txt,2.0,MILP + MIR cutset inequalities,modular,optimal,8060.0,0.034871,8060.0,8060.0,0.0,28,True,solver_status=ok
+network.txt,2.0,Greedy single-path heuristic,modular,feasible,8060.0,0.002388,,,,0,True,gap_vs_proven_optimum_pct=0.0
+network.txt,3.0,Base MILP,modular,optimal,12090.0,0.0413,12090.0,12090.0,0.0,0,True,solver_status=ok
+network.txt,3.0,MILP + MIR cutset inequalities,modular,optimal,12090.0,0.038093,12090.0,12090.0,0.0,28,True,solver_status=ok
+network.txt,3.0,Greedy single-path heuristic,modular,feasible,12090.0,0.002149,,,,0,True,gap_vs_proven_optimum_pct=0.0

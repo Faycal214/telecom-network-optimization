@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telecom-network-optimization"
+version = "0.1.0"
+description = "MILP baselines, MIR cutset strengthening, and a greedy heuristic for capacitated telecom network design"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Faycal Alikacem"}]
+dependencies = ["pyomo>=6.8", "highspy>=1.7", "networkx>=3.2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pandas>=2.0", "matplotlib>=3.7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

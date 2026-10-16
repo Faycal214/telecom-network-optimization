@@ -1,0 +1,6 @@
+pyomo>=6.8
+highspy>=1.7
+networkx>=3.2
+pandas>=2.0
+matplotlib>=3.7
+pytest>=7.0
